@@ -1,0 +1,99 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #F7F7F7;;
+  @include adaptive-value("padding-left", 50, 0, 1);
+  @include adaptive-value("padding-right", 50, 0, 1);
+  @include adaptive-value("padding-top", 10, 20, 1);
+  @include adaptive-value("padding-bottom", 10, 20, 1);
+  @include adaptive-value("height", 140, 70, 1);
+  flex-wrap: wrap;
+
+  @media (max-width: 410px) {
+    height: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 0 0;
+
+    @media (max-width: 410px) {
+      margin: 0 0 15px 0;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        .header__logo-img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .header__logo-img {
+    -webkit-transition: all .3s ease;-moz-transition: all .3s ease;-ms-transition: all .3s ease;-o-transition: all .3s ease;transition: all .3s ease;
+  }
+
+  &__content {
+    @include adaptive-value("margin-left", 15, 10, 1);
+  }
+
+  &__title {
+    @include adaptive-value("font-size", 24, 20, 1);
+    @include adaptive-value("line-height", 29, 23, 1);
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    color: #121212;
+  }
+
+  &__text {
+    @include adaptive-value("font-size", 16, 14, 1);
+    @include adaptive-value("line-height", 19, 16, 1);
+    color: #7B7B7B;
+  }
+
+  &__card {
+    background: #FE5F1E;
+    border-radius: 30px;
+    display: flex;
+    @include adaptive-value("height", 50, 40, 1);
+    align-items: center;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #fff;
+    -webkit-transition: all .3s ease;-moz-transition: all .3s ease;-ms-transition: all .3s ease;-o-transition: all .3s ease;transition: all .3s ease;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: rgba(254,95,30,0.87);
+      }
+    }
+  }
+
+  &__price {
+    display: inline-block;
+    padding: 0 13px;
+    border-right: 2px solid rgba(255, 255, 255, 0.25);
+  }
+
+  &__card-item {
+    padding: 0 13px;
+    display: flex;
+  }
+
+  &__card-img {
+  }
+
+  &__count {
+    display: inline-block;
+    margin: 0 0 0 8px;
+  }
+}

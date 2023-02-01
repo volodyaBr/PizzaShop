@@ -1,0 +1,76 @@
+@import "fonts";
+
+$maxWidth: 1440;
+$maxWidthContainer: 1920 + 30;
+$ff: 'Proxima Nova';
+$md1: 991.98;
+$md2: 767.98;
+$md3: 479.98;
+
+$mainColor: #000;
+$blackColor: #282828;
+$orangeColor: #FE5F1E;
+$grayColor: #F3F3F3;
+
+@import "NullMyCss";
+
+body {
+  font-family: $ff, sans-serif;
+  color: $mainColor;
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+@import "header";
+
+
+
+
+
+
+
+
+
+
+
+
+
