@@ -1,12 +1,12 @@
-import Header from "../Header/Header";
+import SortBar from "../SortBar/SortBar";
+import Pizza from "../Pizza/Pizza";
 
 const Main = () => {
     return (
-        <div className="page">
-            <div className="container">
-                <Header />
-            </div>
-        </div>
+        <>
+            <SortBar/>
+            <Pizza/>
+        </>
     )
 }
 

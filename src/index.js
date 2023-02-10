@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom/client';
 import App from './Components/App/App';
 import "./styles/start.scss"
 import {BrowserRouter} from "react-router-dom";
+import {Provider} from "react-redux";
+import store from "./redux/store";
 
 const wrapper = ReactDOM.createRoot(document.querySelector(".wrapper"));
 wrapper.render(
-    <BrowserRouter>
-        <App/>
-    </BrowserRouter>
+    <Provider store={store}>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
+    </Provider>
 );

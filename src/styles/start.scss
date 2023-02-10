@@ -1,7 +1,8 @@
 @import "fonts";
+@import "icons";
 
 $maxWidth: 1440;
-$maxWidthContainer: 1920 + 30;
+$maxWidthContainer: 1920 + 130;
 $ff: 'Proxima Nova';
 $md1: 991.98;
 $md2: 767.98;
@@ -25,9 +26,22 @@ body {
 .container {
   max-width: $maxWidthContainer + px;
   margin: 0 auto;
-  padding: 0 15px;
+  @include adaptive-value("padding-left", 65, 15, 1);
+  @include adaptive-value("padding-right", 65, 15, 1);
 }
 
+.loader {
+  @include adaptive-value("margin-top", 50, 50, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 80px;
+    object-position: center;
+    object-fit: cover;
+  }
+}
 
 .ibg {
   background-position: center;
@@ -61,6 +75,8 @@ body {
 }
 
 @import "header";
+@import "basket";
+@import "main";
 
 
 

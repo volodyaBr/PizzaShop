@@ -1,0 +1,174 @@
+{
+  "pizzas": [
+    {
+      "id": 1,
+      "img": "http://127.0.0.1:8887/cheeseBurger.png",
+      "name": "Чізбургер-піцца",
+      "dough": {
+        "thin": true,
+        "tradition": true
+      },
+      "size": {
+        "26": true,
+        "30": true,
+        "40": true
+      },
+      "type":  "vegetable",
+      "countOrder": 0,
+      "price": "124"
+    },
+    {
+      "id": 2,
+      "img": "http://127.0.0.1:8887/margarita.png",
+      "name": "Маргарита",
+      "dough": {
+        "thin": true,
+        "tradition": false
+      },
+      "size": {
+        "26": true,
+        "30": true,
+        "40": false
+      },
+      "type":  "close",
+      "countOrder": 0,
+      "price": "165"
+    },
+    {
+      "id": 3,
+      "img": "http://127.0.0.1:8887/peperoni.png",
+      "name": "Пепероні",
+      "dough": {
+        "thin": true,
+        "tradition": true
+      },
+      "size": {
+        "26": true,
+        "30": false,
+        "40": false
+      },
+      "type":  "meat",
+      "countOrder": 0,
+      "price": "140"
+    },
+    {
+      "id": 4,
+      "img": "http://127.0.0.1:8887/cheese.png",
+      "name": "Сирна",
+      "dough": {
+        "thin": true,
+        "tradition": true
+      },
+      "size": {
+        "26": true,
+        "30": false,
+        "40": true
+      },
+      "type":  "vegetable",
+      "countOrder": 0,
+      "price": "120"
+    },
+    {
+      "id": 5,
+      "img": "http://127.0.0.1:8887/crivets.png",
+      "name": "З криветками",
+      "dough": {
+        "thin": true,
+        "tradition": true
+      },
+      "size": {
+        "26": true,
+        "30": true,
+        "40": true
+      },
+      "type":  "close",
+      "countOrder": 0,
+      "price": "90"
+    },
+    {
+      "id": 6,
+      "img": "http://127.0.0.1:8887/gavai.png",
+      "name": "Гаваї",
+      "dough": {
+        "thin": true,
+        "tradition": true
+      },
+      "size": {
+        "26": true,
+        "30": true,
+        "40": true
+      },
+      "type":  "meat",
+      "countOrder": 0,
+      "price": "170"
+    },
+    {
+      "id": 7,
+      "img": "http://127.0.0.1:8887/sugar.png",
+      "name": "Солодка",
+      "dough": {
+        "thin": true,
+        "tradition": true
+      },
+      "size": {
+        "26": true,
+        "30": true,
+        "40": true
+      },
+      "type":  "grill",
+      "countOrder": 0,
+      "price": "143"
+    },
+    {
+      "id": 8,
+      "img": "http://127.0.0.1:8887/tomato.png",
+      "name": "З помідорами",
+      "dough": {
+        "thin": true,
+        "tradition": true
+      },
+      "size": {
+        "26": true,
+        "30": true,
+        "40": true
+      },
+      "type":  "vegetable",
+      "countOrder": 0,
+      "price": "125"
+    },
+    {
+      "id": 1,
+      "img": "http://127.0.0.1:8887/cheeseBurger.png",
+      "name": "Чізбургер-піцца",
+      "dough": {
+        "thin": true,
+        "tradition": true
+      },
+      "size": {
+        "26": true,
+        "30": true,
+        "40": true
+      },
+      "type":  "vegetable",
+      "countOrder": 0,
+      "price": "124"
+    },
+    {
+      "id": 2,
+      "img": "http://127.0.0.1:8887/margarita.png",
+      "name": "Маргарита",
+      "dough": {
+        "thin": true,
+        "tradition": false
+      },
+      "size": {
+        "26": true,
+        "30": true,
+        "40": false
+      },
+      "type":  "close",
+      "countOrder": 0,
+      "price": "165"
+    }
+  ]
+}

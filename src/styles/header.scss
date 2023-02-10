@@ -1,21 +1,20 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
   border-bottom: 2px solid #F7F7F7;;
-  @include adaptive-value("padding-left", 50, 0, 1);
-  @include adaptive-value("padding-right", 50, 0, 1);
   @include adaptive-value("padding-top", 10, 20, 1);
   @include adaptive-value("padding-bottom", 10, 20, 1);
-  @include adaptive-value("height", 140, 70, 1);
-  flex-wrap: wrap;
 
-  @media (max-width: 410px) {
-    height: auto;
-    flex-wrap: nowrap;
-    flex-direction: column;
+  &__container {
+    @include adaptive-value("height", 140, 70, 1);
+    display: flex;
+    //flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 410px) {
+      height: auto;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
   }
 
   &__logo {
@@ -58,6 +57,28 @@
     color: #7B7B7B;
   }
 
+  &__input {
+    flex: 0 1 40%;
+    border: 1px solid rgba(86,86,86,0.48);
+    height: 45px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 100%;
+      margin: 0 15px;
+      @include adaptive-value("font-size", 16, 14, 1);
+      @include adaptive-value("line-height", 19, 16, 1);
+      color: rgba(6,6,6,0.98);
+    }
+
+    &:before {
+      margin: 0 0 0 15px;
+    }
+  }
+
   &__card {
     background: #FE5F1E;
     border-radius: 30px;
@@ -73,7 +94,7 @@
 
     @media (any-hover: hover) {
       &:hover {
-        background: rgba(254,95,30,0.87);
+        background: rgba(254,95,30,0.67);
       }
     }
   }
